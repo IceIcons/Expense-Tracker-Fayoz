@@ -1,0 +1,159 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 5%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.page {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  height: 100%;
+  border-radius: 14px !important;
+  box-shadow: 0 3px 15px #00000008 !important;
+}
+
+.transactions {
+  margin-top: 38px;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.transaction-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px #00000008 !important;
+}
+
+.transaction-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.transaction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.transaction-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.expense-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.category-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .expense-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .transaction-card {
+    padding: 12px;
+  }
+
+  .transaction-actions {
+    gap: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .transaction-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .transaction-info {
+    gap: 8px;
+  }
+}
